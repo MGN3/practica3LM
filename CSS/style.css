@@ -1,0 +1,45 @@
+/*Estilos CSS*/
+
+.jumbotron {
+    text-align: center;
+}
+
+#header1,
+#header2,
+#header3 {
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: darkgrey;
+}
+
+#header3 {
+    align-items: right;
+    justify-content: right;
+    text-align: right;
+}
+
+#imgLogo {
+    width: 130px;
+    height: 100px;
+}
+
+/*Aquí usamos varios atributos para centrar las imágenes del carrusely darles un tamaño especifico*/
+.carousel-item img {
+    max-width: 300px;
+    height: 300px;
+    display: inline-block;
+    margin: auto;
+
+}
+
+/*Con filter: invert(1) invertimos el color de los elementos de la flecha del carrusel*/
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1);
+}

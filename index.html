@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="MGN Portfolio"
+        content="Full-Stack web developer. Developing webs from scratch, based on your needs and adapted to your budget. Best practices, scalable webs and easy to mantain." />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow" />
+    <title>MGN Portfolio</title>
+    <!--Links CDN para que la web funcione usando bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css" />
+</head>
+
+<!--Index básico usando bootstrap 5.3.0 y algunos elementos de HTML5 semántico-->
+
+<body>
+    <main>
+        <!--HEADER usando un logo y botón desplegable-->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div id="header1" class="col-4"><img id="imgLogo" src="./IMG/LOGO.jpg" alt="Logo"></div>
+
+                    <div id="header2" class="col-4">
+                        <h1>MGN Portfolio</h1>
+                    </div>
+
+                    <div id="header3" class="col-4">
+                        <div class="collapse" id="navbarToggleExternalContent">
+                            <!--Id para vincular al botón desplegable-->
+                            <div id="boton1">
+                                <h5>Find more:</h5>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About me</a></li>
+                                    <li><a href="#">Resume</a></li>
+                            </div>
+                        </div>
+                        <nav class="navbar"> <!--Código relativo al botón desplegable-->
+                            <div class="container-fluid">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarToggleExternalContent"
+                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <br><br><br><br>
+
+        <!--CARRUSEL-->
+
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div id="carousel1" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./IMG/html5.png" class="d-block w-100" alt="imagen primera">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./IMG/css3logo123.png" class="d-block w-100" alt="imagen segunda">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./IMG/js.png" class="d-block w-100" alt="imagen tercera">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <br><br>
+        <br><br>
+
+        <!--JUMBOTRON-->
+
+        <article>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <h1 class="display-4">MGN Full Stack Web Developer</h1>
+                    <p class="lead">Check this site to get to know me better</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+</body>
+
+</html>
